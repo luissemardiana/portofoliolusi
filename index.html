@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio Luis Semardiana — Web developer yang membangun pengalaman digital modern." />
+    <title>Luis Semardiana — Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Beranda Luis">luis<span>.</span></a>
+      <nav id="main-nav"><a href="#work">Karya</a><a href="#about">Tentang</a><a href="#contact">Kontak</a></nav>
+      <button class="theme-toggle" aria-label="Ubah tema"><span>☼</span></button>
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><i></i> AVAILABLE FOR SELECTED PROJECTS</p>
+          <h1>Mengubah ide<br />menjadi <em>pengalaman</em><br />digital.</h1>
+          <p class="lead">Halo, saya Luis Semardiana. Seorang web developer yang menciptakan website cepat, fungsional, dan berkesan.</p>
+          <div class="hero-actions"><a href="#work" class="button primary">Lihat karya <span>↘</span></a><a href="#contact" class="text-link">Mari bekerja sama <span>→</span></a></div>
+        </div>
+        <div class="hero-visual reveal delay">
+          <div class="code-window">
+            <div class="window-top"><span></span><span></span><span></span><p>portfolio.js</p></div>
+            <pre><code><b>const</b> passion = <i>'build'</i>;
+<b>const</b> detail = <i>'everything'</i>;
+
+<b>function</b> <strong>create</strong>() {
+  <b>return</b> <strong>experiences</strong>
+    .<strong>thatFeelAlive</strong>();
+}
+
+<strong>create</strong>(); <mark>▍</mark></code></pre>
+          </div>
+          <div class="float-chip chip-a">✦ Creative dev</div><div class="float-chip chip-b">01 — 06</div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Kemampuan"><div>WEB DESIGN <b>✦</b> FRONTEND <b>✦</b> BACKEND <b>✦</b> UI/UX <b>✦</b> WEB DESIGN <b>✦</b> FRONTEND <b>✦</b> BACKEND <b>✦</b> UI/UX <b>✦</b></div></section>
+
+      <section class="work section" id="work">
+        <div class="section-heading reveal"><div><p class="eyebrow">01 — PILIHAN KARYA</p><h2>Proyek yang<br /><em>pernah dibuat.</em></h2></div><p>Setiap karya dibangun dengan perhatian pada strategi, estetika, dan pengalaman pengguna.</p></div>
+        <div class="filters reveal" role="group" aria-label="Filter karya"><button class="active" data-filter="all">Semua</button><button data-filter="web">Website</button><button data-filter="app">Web App</button><button data-filter="ui">UI/UX</button></div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about-number">02</div><div class="about-copy reveal"><p class="eyebrow">TENTANG SAYA</p><h2>Lebih dari sekadar<br /><em>baris kode.</em></h2><p>Saya percaya website terbaik lahir dari perpaduan antara teknologi yang tepat dan rasa ingin tahu. Fokus saya adalah menghadirkan solusi yang tidak hanya terlihat baik, tetapi juga bekerja dengan sangat baik.</p><div class="stats"><div><strong>3<span>+</span></strong><small>Tahun belajar & berkarya</small></div><div><strong>10<span>+</span></strong><small>Proyek digital</small></div><div><strong>100<span>%</span></strong><small>Semangat berkarya</small></div></div></div>
+      </section>
+
+      <section class="contact section" id="contact"><p class="eyebrow reveal">03 — PUNYA IDE?</p><h2 class="reveal">Mari buat sesuatu<br /><em>yang luar biasa.</em></h2><a class="contact-mail reveal" href="mailto:luissemardiana@gmail.com">Say hello <span>↗</span></a><p class="contact-note">Atau temukan saya di <a href="https://github.com/luissemardiana" target="_blank" rel="noreferrer">GitHub</a>.</p></section>
+    </main>
+    <footer><a class="brand" href="#home">luis<span>.</span></a><p>© <span id="year"></span> Luis Semardiana. Dibuat dengan penuh rasa ingin tahu.</p><a href="#home">Kembali ke atas ↑</a></footer>
+    <dialog id="project-modal"><button class="modal-close" aria-label="Tutup">×</button><div id="modal-content"></div></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
